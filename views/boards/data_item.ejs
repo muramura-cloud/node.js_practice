@@ -1,0 +1,13 @@
+<% if (val!=null) { %>
+
+    <tr class="row">
+        <th class="col-2">
+            <a href="/boards/home/<%= val.User.name %>/<%= val.userId %>/0" class="text-dark">
+                <%= val.User.name %>
+            </a>
+        </th>
+        <td class="col-7">
+            <%= val.message %>
+        </td>
+    </tr>
+    <% } %>
